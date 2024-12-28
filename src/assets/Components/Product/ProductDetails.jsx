@@ -6,7 +6,7 @@ import Loading from '../Loading/Loading';
 
 export default function Product() {
   const {id}=useParams();
-  const {data,error,isLoading}=useFetch(`http://dummyjson.com/products/${id}`);
+  const {data,error,isLoading}=useFetch(`https://dummyjson.com/products/${id}`);
 
   if(isLoading){
     return <Loading />
